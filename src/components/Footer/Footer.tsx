@@ -10,28 +10,25 @@ export const Footer: FunctionComponent = () => {
       <ul>
         <li className={classes.footerLinks}>
           <a
-            href="https://twitter.com/mihailgaberov"
+            href="https://twitter.com/refiloe_ma"
             target="_blank"
             rel="noopener noreferrer"
             data-cy="twitterLink"
           >
-            twitter
+            Twitter
           </a>{" "}
           &bull;{" "}
           <a
-            href="https://github.com/mihailgaberov"
+            href="https://github.com/refiscoding"
             target="_blank"
             rel="noopener noreferrer"
             data-cy="githubLink"
           >
-            github
+            GitHub
           </a>
         </li>
         <li className={classes.footerCopyrights}>
           © {packageJson.author} {currentYear}. All rights reserved.
-        </li>
-        <li>
-          <div className={classes.version}>v.{packageJson.version}</div>
         </li>
       </ul>
     </footer>

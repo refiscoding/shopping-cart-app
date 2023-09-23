@@ -2,6 +2,7 @@
 .productPage {
   padding: 1rem;
   margin-top: 8rem;
+  background: white;
 
   // Define the container for the products
   .container {
@@ -11,7 +12,7 @@
 
     // Define the styles for each product
     .product {
-      flex-basis: 33.33%;
+      flex-basis: 30%;
       margin-bottom: 5rem;
       text-align: center;
       display: flex;
@@ -21,12 +22,19 @@
       padding: 10px;
       border-radius: 20px;
       background-color: #fff;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.20);
 
       // Define styles for the product title
       h3 {
         color: #007185;
         font-weight: 700;
+        line-height: 20px;
+        margin: 20px;
+      }
+
+      p {
+        color: black;
+        font-weight: 300;
         line-height: 20px;
         margin: 20px;
       }
@@ -50,7 +58,7 @@
 
         // Define styles for button hover state
         &:hover:not([disabled]) {
-          background-color: #eecf1d;
+          background-color: #beaf5a;
           cursor: pointer;
         }
 
