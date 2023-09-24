@@ -1,6 +1,9 @@
 .cart {
   padding: 1rem;
   margin-top: 8rem;
+  background-color: white; /* White background */
+  border-radius: 5px; /* Border radius of 5px */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 
   .container {
     display: flex;
@@ -8,27 +11,50 @@
 
     .product {
       display: flex;
-      border-top: 1px dotted;
-      border-left: 1px dotted;
-      border-right: 1px dotted;
-      padding: .3rem .5rem;
+      border: 1px solid #d1d1d1; /* Replace with your desired border style */
+      border-radius: 6px; /* Add border radius */
+      margin: 1rem 0; /* Create appropriate top and bottom margins */
+      padding: 1rem;
       align-items: center;
+      transition: transform 0.2s ease-in-out; /* Add a smooth hover animation */
 
       h3 {
         color: #007185;
         font-weight: 700;
-        font-size: 1em;
-        line-height: 20px;
-        margin: .3rem;
+        font-size: 1.2rem; /* Adjust font size */
+        line-height: 1.5;
+        margin: 0 1rem; /* Create appropriate left and right margins */
         flex: 1;
       }
 
       img {
-        max-width: 3rem;
+        max-width: 60px; /* Adjust image size */
         height: auto;
-        margin: .875rem;
+        margin: 0 0.5rem; /* Adjust margins for better spacing */
+      }
+
+      .quantifier {
+        /* Style the quantifier buttons */
+        button {
+          background-color: #fbd815;
+          width: 2rem; /* Adjust button width */
+          height: 2rem; /* Adjust button height */
+          border-radius: 5px; /* Add border radius */
+          border: none; /* Remove button border */
+          margin: 0.25rem; /* Adjust button margins */
+          font-size: 1rem; /* Adjust button font size */
+          color: #000; /* Black text color */
+          cursor: pointer;
+
+          &:hover {
+            background-color: #beaf5a;
+          }
+        }
       }
     }
   }
-}
 
+  .total-price {
+    color: rgb(0, 0, 0);
+  }
+}
