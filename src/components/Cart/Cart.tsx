@@ -7,6 +7,7 @@ import { TotalPrice } from '../TotalPrice'
 import { Operation } from '../Quantifier/Quantifier.tsx'
 import classes from './cart.module.scss'
 import { useLocation } from 'react-router-dom'
+import emptyCartImage from '../../assets/empty-cart.jpeg'
 
 
 export const Cart: FunctionComponent = () => {
@@ -48,6 +49,14 @@ export const Cart: FunctionComponent = () => {
     <section className={classes.cart}>
        <h1>Cart</h1>
 
+       {getProducts().length === 0 ? (
+        <div className={classes.emptyCart}>
+          <img src={emptyCartImage} alt="Empty Cart" />
+          <h3> Your cart is empty.</h3>
+          <p> Looks like you have not added anything to your cart. 
+            Go ahead and explore products.</p>
+        </div>
+       ) : (
       <div className={classes.container}>
         {getProducts().map(product => (
           <div className={classes.product} key={product.id}>
@@ -60,7 +69,8 @@ export const Cart: FunctionComponent = () => {
           </div>
         ))}
       </div>
-      <TotalPrice amount={totalPrice} />
+       )}
+      {getProducts().length > 0 && <TotalPrice amount={totalPrice} />}
     </section>
   )
 }
