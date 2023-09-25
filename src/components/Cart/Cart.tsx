@@ -48,7 +48,7 @@ export const Cart: FunctionComponent = () => {
   return (
     <section className={classes.cart}>
        <h1>Cart</h1>
-
+       
        {getProducts().length === 0 ? (
         <div className={classes.emptyCart}>
           <img src={emptyCartImage} alt="Empty Cart" />
@@ -70,7 +70,7 @@ export const Cart: FunctionComponent = () => {
         ))}
       </div>
        )}
-      {getProducts().length > 0 && <TotalPrice amount={totalPrice} />}
-    </section>
+       {getProducts().length > 0 && <TotalPrice amount={totalPrice} />}
+      </section>
   )
 }

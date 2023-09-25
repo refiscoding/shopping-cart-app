@@ -1,6 +1,7 @@
 .cart {
   padding: 1rem;
   margin-top: 8rem;
+  align-items: center;
   background-color: white; /* White background */
   border-radius: 5px; /* Border radius of 5px */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
@@ -8,13 +9,22 @@
   .container {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    height: 85%;
+    background-color: #ffffff;
+    border-radius: 6px;
+    align-items: center;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    box-shadow: 0px 25px 40px #6363638c;
 
     .product {
       display: flex;
+      width: 80%;
       border: 1px solid #d1d1d1; /* Replace with your desired border style */
-      border-radius: 6px; /* Add border radius */
+      border-radius: 20px; /* Add border radius */
       margin: 1rem 0; /* Create appropriate top and bottom margins */
-      padding: 1rem;
+      padding: 20px;
       align-items: center;
       transition: transform 0.2s ease-in-out; /* Add a smooth hover animation */
 
@@ -28,29 +38,11 @@
       }
 
       img {
-        max-width: 60px; /* Adjust image size */
-        height: auto;
+        max-width: 100px; /* Adjust image size */
+        max-height: 50%;
         margin: 0 0.5rem; /* Adjust margins for better spacing */
       }
 
-      .quantifier {
-        /* Style the quantifier buttons */
-        button {
-          background-color: #fbd815;
-          width: 2rem; /* Adjust button width */
-          height: 2rem; /* Adjust button height */
-          border-radius: 5px; /* Add border radius */
-          border: none; /* Remove button border */
-          margin: 0.25rem; /* Adjust button margins */
-          font-size: 1rem; /* Adjust button font size */
-          color: #000; /* Black text color */
-          cursor: pointer;
-
-          &:hover {
-            background-color: #beaf5a;
-          }
-        }
-      }
     }
   }
 
