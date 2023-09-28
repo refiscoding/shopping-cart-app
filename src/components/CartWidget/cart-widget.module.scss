@@ -10,7 +10,9 @@
   justify-content: space-between;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.221);
+    transform: scale(1.05); /* Slightly scale up on hover */
+    background: rgba(0, 0, 0, 0.167);
+    border-radius: 20px;
   }
   
   .shoppingCart {
@@ -18,13 +20,12 @@
     padding: 1rem .4rem;
     will-change: filter;
     transition: filter 300ms;
-
   }
 
   .productsCount {
     z-index: 1;
     font-size: 2em;
     top: 38px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
   }
 }
