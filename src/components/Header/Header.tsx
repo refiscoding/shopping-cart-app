@@ -2,7 +2,7 @@ import { FunctionComponent, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import useLocalStorageState from 'use-local-storage-state'
 
-import logo from '/logo.svg'
+import logo from '/logo.png'
 import { CartWidget } from '../CartWidget'
 import { CartProps } from '../Products/Products.tsx'
 import classes from './header.module.scss'
